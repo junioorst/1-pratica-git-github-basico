@@ -10,9 +10,20 @@ public class Main {
         array.add(23);
         array.add(45);
         array.add(9);
+
+        retornaOcorrencias(array, 5);
     }
 
-    // Método que retorna quantas ocorrências de um elemento estão na lista
+    // a. Método que retorna quantas ocorrências de um elemento estão na lista
+    public static int retornaOcorrencias (ArrayList<Integer> array, int n) {
+        int ocorrencias = 0;
+        for (int i = 0; i < array.size(); i++) {
+            if (array.get(i) == n) {
+                ocorrencias++;
+            }
+        }
+        return ocorrencias;
+    }
 
 
     // c. Método que retorna uma lista de elementos repetidos de l
